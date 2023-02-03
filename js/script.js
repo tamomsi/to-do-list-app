@@ -4,17 +4,17 @@ function newItem() {
     li.append(inputValue);
 
     if (inputValue === '') {
-        alert("You must write something!");
+        alert('You must write something!');
     } else {
         $('#list').append(li);
     }
 
     li.on("dblclick", function (crossOut) {
-        li.toggleClass("strike");
+        li.toggleClass('strike');
     });
 
     let crossOutButton = $('<crossOutButton></crossOutButton>');
-    crossOutButton.append(document.createTextNode("X"));
+    crossOutButton.append(document.createTextNode('X'));
     li.append(crossOutButton);
 
     crossOutButton.on('click', function (deleteListItem) {
