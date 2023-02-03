@@ -9,7 +9,7 @@ function newItem() {
         $('#list').append(li);
     }
 
-    li.on("dblclick", function (crossOut) {
+    li.on('dblclick', function (crossOut) {
         li.toggleClass('strike');
     });
 
