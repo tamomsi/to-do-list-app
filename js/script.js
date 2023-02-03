@@ -8,4 +8,8 @@ function newItem() {
     } else {
         $('#list').append(li);
     }
+
+    li.on("dblclick", function (crossOut) {
+        li.toggleClass("strike");
+    });
 }
