@@ -9,7 +9,7 @@ function newItem() {
         $('#list').append(li);
     }
 
-    li.on('dblclick', function (crossOut) {
+    li.on('dblclick', function () {
         li.toggleClass('strike');
     });
 
@@ -17,7 +17,7 @@ function newItem() {
     crossOutButton.append(document.createTextNode('X'));
     li.append(crossOutButton);
 
-    crossOutButton.on('click', function (deleteListItem) {
+    crossOutButton.on('click', function () {
         li.addClass('delete');
     });
 
